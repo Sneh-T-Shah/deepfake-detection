@@ -1,6 +1,5 @@
 import torch
 from torch.utils.model_zoo import load_url
-import matplotlib.pyplot as plt
 from scipy.special import expit
 
 import sys
@@ -60,9 +59,9 @@ def video_pred(threshold=0.5,model='EfficientNetAutoAttB4',dataset='DFDC',frames
     print(expit(faces_fake_pred))
     print(faces_fake_pred)
     print(expit(faces_fake_pred.mean()))
-    if expit(faces_fake_pred.mean()) > threshold:
-        return 'fake'
+    if faces_fake_pred.mean()> threshold:
+        return 'fake',expit(faces_fake_pred.mean())
     else:
-        return 'real'
+        return 'real',expit(faces_fake_pred.mean())
     
 # print(preprocess())

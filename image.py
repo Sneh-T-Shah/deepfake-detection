@@ -1,8 +1,7 @@
 import torch
 from torch.utils.model_zoo import load_url
 from PIL import Image
-import matplotlib.pyplot as plt
-
+from scipy.special import expit
 import sys
 sys.path.append('..')
 
@@ -46,16 +45,16 @@ def image_pred(threshold=0.5,model='EfficientNetAutoAttB4',dataset='DFDC',image_
     im_real = Image.open(image_path)
     im_real_faces = face_extractor.process_image(img=im_real)
     im_real_face = im_real_faces['faces'][0] # take the face with the highest confidence score found by BlazeFace
-
+    
     faces_t = torch.stack( [ transf(image=im)['image'] for im in [im_real_face] ] )
 
     with torch.no_grad():
         faces_pred = torch.sigmoid(net(faces_t.to(device))).cpu().numpy().flatten()
 
     if faces_pred.mean()>threshold:
-        return "fake"
+        return "fake",expit(faces_pred.mean())
     else:
-        return "real"
+        return "real",expit(faces_pred.mean())
     
 # print(image_pred(image_path='C:/Users/snehs/OneDrive/Desktop/icpr2020dfdc/notebook/samples/lynaeydofd_fr0.jpg'))
     
