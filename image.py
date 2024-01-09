@@ -39,6 +39,7 @@ def image_pred(threshold=0.5,model='EfficientNetAutoAttB4',dataset='DFDC',image_
 
     facedet = BlazeFace().to(device)
     facedet.load_weights("blazeface/blazeface.pth")
+    print("hii)
     facedet.load_anchors("blazeface/anchors.npy")
     face_extractor = FaceExtractor(facedet=facedet)
     print(image_path,"image_path")
