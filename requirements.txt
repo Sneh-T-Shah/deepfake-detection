@@ -1,6 +1,6 @@
 Flask
 albumentations
-numpy==1.23.5
+numpy<=1.22
 torchvision
 tqdm
 pandas
