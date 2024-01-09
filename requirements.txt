@@ -1,6 +1,5 @@
 Flask
 albumentations
-numpy<=1.22
 torchvision
 tqdm
 pandas
@@ -10,3 +9,4 @@ pillow
 torch 
 scipy
 matplotlib
+numpy<=1.22
