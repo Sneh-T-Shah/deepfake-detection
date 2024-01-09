@@ -25,6 +25,7 @@ def image_pred(threshold=0.5,model='EfficientNetAutoAttB4',dataset='DFDC',image_
     - DFDC
     - FFPP
     """
+    print("hii")
     train_db = dataset
 
     device = torch.device('cuda:0') if torch.cuda.is_available() else torch.device('cpu')
