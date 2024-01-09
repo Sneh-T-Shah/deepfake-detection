@@ -37,7 +37,7 @@ class VideoReader:
         frame_count = int(capture.get(cv2.CAP_PROP_FRAME_COUNT))
         if frame_count <= 0: return None
 
-        frame_idxs = np.linspace(0, frame_count - 1, num_frames, endpoint=True, dtype=np.int)
+        frame_idxs = np.linspace(0, frame_count - 1, num_frames, endpoint=True, dtype=np.int32)
         frame_idxs = np.unique(frame_idxs)  # Avoid repeating frame idxs otherwise it breaks reading
         if jitter > 0:
             np.random.seed(seed)
@@ -206,7 +206,7 @@ class VideoReaderIspl(VideoReader):
         video_rate = capture.get(cv2.CAP_PROP_FPS)
         hop = 1 if fps == -1 else max(video_rate // fps, 1)
         end_pts = frame_count if num_frames == -1 else num_frames * hop
-        frame_idxs = np.arange(0, end_pts - 1, hop, endpoint=True, dtype=np.int)
+        frame_idxs = np.arange(0, end_pts - 1, hop, endpoint=True, dtype=np.int32)
 
         result = self._read_frames_at_indices(path, capture, frame_idxs)
         capture.release()
