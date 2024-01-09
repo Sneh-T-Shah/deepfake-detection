@@ -3,6 +3,7 @@ from torch.utils.model_zoo import load_url
 from PIL import Image
 from scipy.special import expit
 import sys
+import streamlit as st
 sys.path.append('..')
 
 from blazeface import FaceExtractor, BlazeFace
