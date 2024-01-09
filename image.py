@@ -37,12 +37,14 @@ def image_pred(threshold=0.5,model='EfficientNetAutoAttB4',dataset='DFDC',image_
     net.load_state_dict(load_url(model_url,map_location=device,check_hash=True))
 
     transf = utils.get_transformer(face_policy, face_size, net.get_normalizer(), train=False)
-    st.text("hi")
+    
     facedet = BlazeFace().to(device)
     facedet.load_weights("blazeface/blazeface.pth")
     
     facedet.load_anchors("blazeface/anchors.npy")
+    st.text("hi3")
     face_extractor = FaceExtractor(facedet=facedet)
+    st.text("hi4")
     print(image_path,"image_path")
     im_real = Image.open(image_path)
     im_real_faces = face_extractor.process_image(img=im_real)
