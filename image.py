@@ -1,3 +1,5 @@
+import pip
+pip.main(['install','numpy==1.23.5'])
 import torch
 from torch.utils.model_zoo import load_url
 from PIL import Image
