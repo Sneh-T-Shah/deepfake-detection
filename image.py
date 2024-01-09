@@ -25,7 +25,6 @@ def image_pred(threshold=0.5,model='EfficientNetAutoAttB4',dataset='DFDC',image_
     - DFDC
     - FFPP
     """
-    print("hii")
     train_db = dataset
 
     device = torch.device('cuda:0') if torch.cuda.is_available() else torch.device('cpu')
@@ -37,7 +36,7 @@ def image_pred(threshold=0.5,model='EfficientNetAutoAttB4',dataset='DFDC',image_
     net.load_state_dict(load_url(model_url,map_location=device,check_hash=True))
 
     transf = utils.get_transformer(face_policy, face_size, net.get_normalizer(), train=False)
-    print("hii")
+    st.text("hi")
     facedet = BlazeFace().to(device)
     facedet.load_weights("blazeface/blazeface.pth")
     
