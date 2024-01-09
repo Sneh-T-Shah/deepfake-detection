@@ -15,7 +15,7 @@ def process_image(image, model, dataset, threshold):
 
     try:
         Image.open(image).convert("RGB").save("uploads/check.jpg", "JPEG")
-
+        print("hii")
         output_string, pred = image_pred(
             image_path='uploads/check.jpg', model=model, dataset=dataset, threshold=threshold)
         return output_string,pred
