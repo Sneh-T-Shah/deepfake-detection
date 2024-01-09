@@ -9,3 +9,4 @@ scikit-learn
 pillow
 torch 
 scipy
+matplotlib
