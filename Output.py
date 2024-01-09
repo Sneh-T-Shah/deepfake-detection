@@ -4,7 +4,7 @@ from api import process_image, process_video
 
 # Set the title of your Streamlit app
 st.title("Deepfake Detector App")
-st.text("hi")
+
 # Choose between image and video upload
 file_type = st.radio("Select file type:", ("Image", "Video"))
 
