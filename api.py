@@ -3,8 +3,6 @@ from youtube import video_pred
 from image import image_pred
 from PIL import Image
 import streamlit as st
-import traceback 
-import sys 
 
 ALLOWED_VIDEO_EXTENSIONS = {'mp4'}
 ALLOWED_IMAGE_EXTENSIONS = {'jpg', 'jpeg', 'png'}
@@ -24,8 +22,6 @@ def process_image(image, model, dataset, threshold):
         return output_string,pred
 
     except Exception as e:
-        st.title("hii2")
-        traceback.print_exception(*sys.exc_info())
         return str(e),-1
 
     finally:
