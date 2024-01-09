@@ -21,8 +21,7 @@ def process_image(image, model, dataset, threshold):
         return output_string,pred
 
     except Exception as e:
-        print(e)
-        return str(e),-1
+        return str(e)
 
     finally:
         # Ensure the temporary video file is deleted
