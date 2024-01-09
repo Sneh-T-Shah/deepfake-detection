@@ -3,6 +3,8 @@ from youtube import video_pred
 from image import image_pred
 from PIL import Image
 import streamlit as st
+import traceback 
+import sys 
 
 ALLOWED_VIDEO_EXTENSIONS = {'mp4'}
 ALLOWED_IMAGE_EXTENSIONS = {'jpg', 'jpeg', 'png'}
