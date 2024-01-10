@@ -40,7 +40,7 @@ def process_video(video_path, model, dataset, threshold, frames):
 
     except Exception as e:
         # Handle any errors during processing
-        return str(e)
+        return str(e),-1
 
     finally:
         # Ensure the temporary video file is deleted
