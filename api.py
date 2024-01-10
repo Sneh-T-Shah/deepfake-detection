@@ -3,6 +3,8 @@ from youtube import video_pred
 from image import image_pred
 from PIL import Image
 import streamlit as st
+import traceback
+import sys
 
 ALLOWED_VIDEO_EXTENSIONS = {'mp4'}
 ALLOWED_IMAGE_EXTENSIONS = {'jpg', 'jpeg', 'png'}
@@ -40,7 +42,7 @@ def process_video(video_path, model, dataset, threshold, frames):
 
     except Exception as e:
         # Handle any errors during processing
-        return str(e),-1
+        return traceback.print_exception(*sys.exc_info()) ,-1
 
     finally:
         # Ensure the temporary video file is deleted
