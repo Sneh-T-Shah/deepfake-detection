@@ -1,6 +1,11 @@
 # Deepfake Detector App
 
-![Deepfake Detector App](link_to_your_app_screenshot.png)
+![Deepfake Detector App](https://deep-fake-detection-m.streamlit.app/)
+
+## ScreenShots
+![Streamlit - Google Chrome 16-01-2024 21_30_24](https://github.com/Sneh-T-Shah/deepfake-detection/assets/116267467/1cbb8141-7123-4b95-a67d-50f99f3c44bf)
+![Streamlit - Google Chrome 16-01-2024 21_30_40](https://github.com/Sneh-T-Shah/deepfake-detection/assets/116267467/b2c8e510-3a86-46fa-b022-44fc23846e6d)
+![Streamlit - Google Chrome 16-01-2024 21_33_16](https://github.com/Sneh-T-Shah/deepfake-detection/assets/116267467/cf4905a3-0ace-47b5-97e9-e2ecb5ccc89f)
 
 ## Table of Contents
 
