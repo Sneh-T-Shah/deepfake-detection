@@ -59,7 +59,13 @@ if uploaded_file is not None:
                                          dataset=dataset, threshold=threshold, frames=frames)
 
             st.markdown(
-                f"The given {file_type} is **{result}** with a probability of **{pred:.2f}**")
+                 f'''
+                <style>
+                    .result{{
+                        color: {'#ff4b4b' if result == 'fake' else '#6eb52f'};
+                    }}
+                </style>
+                <h3>The given {file_type} is: <span class="result"> {result} </span> with a probability of <span class="result">{pred:.2f}</span></h3>''', unsafe_allow_html=True)
 else:
     st.info("Please upload a file.")
 
