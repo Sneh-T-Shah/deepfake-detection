@@ -3,9 +3,9 @@
 - [Deepfake Detector App](https://deep-fake-detection-m.streamlit.app/)
 
 ## ScreenShots
-<img src="https://github.com/Sneh-T-Shah/deepfake-detection/assets/116267467/1cbb8141-7123-4b95-a67d-50f99f3c44bf" width="75%">
-<img src="https://github.com/Sneh-T-Shah/deepfake-detection/assets/116267467/b2c8e510-3a86-46fa-b022-44fc23846e6d" width="75%">
-<img src="https://github.com/Sneh-T-Shah/deepfake-detection/assets/116267467/cf4905a3-0ace-47b5-97e9-e2ecb5ccc89f" width="75%">
+<img src="https://github.com/Sneh-T-Shah/deepfake-detection/assets/116267467/1cbb8141-7123-4b95-a67d-50f99f3c44bf">
+<img src="https://github.com/Sneh-T-Shah/deepfake-detection/assets/116267467/b2c8e510-3a86-46fa-b022-44fc23846e6d">
+<img src="https://github.com/Sneh-T-Shah/deepfake-detection/assets/116267467/cf4905a3-0ace-47b5-97e9-e2ecb5ccc89f">
 
 ## Table of Contents
 
