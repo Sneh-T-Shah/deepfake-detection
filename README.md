@@ -5,7 +5,7 @@
 ## ScreenShots
 ![Streamlit - Google Chrome 16-01-2024 21_30_24](https://github.com/Sneh-T-Shah/deepfake-detection/assets/116267467/eccce6cc-b829-4f68-9dda-42da833a571a)
 ![Streamlit - Google Chrome 16-01-2024 21_30_40](https://github.com/Sneh-T-Shah/deepfake-detection/assets/116267467/33e35488-d1ef-4c9a-825f-c2a1be5bae89)
-![Streamlit - Go![Streamlit - Google Chrome 16-01-2024 21_33_16](https://github.com/Sneh-T-Shah/deepfake-detection/assets/116267467/cf45d464-20fc-4673-bb42-f9e4d7be93be)
+![Streamlit - Google Chrome 16-01-2024 21_50_22](https://github.com/Sneh-T-Shah/deepfake-detection/assets/116267467/4a2007ff-aeb4-48da-b4c6-2cec40b0ba89)
 ![Streamlit - Google Chrome 16-01-2024 21_33_16](https://github.com/Sneh-T-Shah/deepfake-detection/assets/116267467/f3b42776-d7a6-4563-8fae-60abc4623965)
 
 ## Table of Contents
