@@ -24,6 +24,10 @@
 
 Welcome to the Deepfake Detector App repository! This Streamlit app is designed to detect deepfake content in images and videos using state-of-the-art models. It provides a user-friendly interface for uploading files and obtaining deepfake predictions with adjustable parameters.
 
+# Recommended parameters:
+ - Model : **EfficientNetAutoAttB4**
+ - Dataset: **DFDC**
+
 ## Features
 
 - **File Type Selection**: Choose between uploading an image or a video for deepfake detection.
@@ -75,7 +79,7 @@ We welcome contributions! If you'd like to contribute to this project.
 Web app for this project is made by Sneh Shah and Pankil Soni.
 
 ## Contact
-For any inquiries or feedback, please contact:
+For any query or feedback, please contact:
 
 - [Sneh shah](https://github.com/Sneh-T-Shah/)
 - [Pankil Soni](https://github.com/pankil-soni/)
