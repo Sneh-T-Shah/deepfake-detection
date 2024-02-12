@@ -54,11 +54,6 @@ def image_pred(threshold=0.5,model='EfficientNetAutoAttB4',dataset='DFDC',image_
         faces_pred = torch.sigmoid(net(faces_t.to(device))).cpu().numpy().flatten()
     print("hii1")
 
-    if model == 'EfficientNetAutoAttB4' and dataset == 'DFDC':
-         if faces_pred.mean()<threshold:
-            return "fake", faces_pred[0]
-         else:
-            return "real", faces_pred[0]
              
     if faces_pred.mean()>threshold:
         return "fake",faces_pred.mean()
