@@ -77,6 +77,7 @@ We welcome contributions! If you'd like to contribute to this project.
 
 ## Acknowledgments
 Web app for this project is made by Sneh Shah and Pankil Soni.
+The original source for the deep-learning models is on the github reopsitory https://github.com/polimi-ispl/icpr2020dfdc
 
 ## Contact
 For any query or feedback, please contact:
